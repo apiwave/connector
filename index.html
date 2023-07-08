@@ -7,7 +7,7 @@
             const code = urlParams.get('code');
             const state = urlParams.get('state').split(',');
             
-            const redirectUrl = state[1]+'\\?c__code='+ code;
+            const redirectUrl = state[1]+'\\?c__code='+ code + '&c__connection_type='+state[2];
 
             window.open(redirectUrl,"_self");
            
