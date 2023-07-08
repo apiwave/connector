@@ -4,10 +4,12 @@
         <script>
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
+            const code = urlParams.get('code');
             const state = urlParams.get('state').split(',');
             
-            console.log(state);
+            const redirectUrl = state[1]+'\\?c__code='+ code;
 
+            window.open(redirectUrl);
            
         </script>  
     </head>  
