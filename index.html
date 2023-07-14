@@ -8,9 +8,9 @@
             const state = urlParams.get('state').split(',');
             const companyId = urlParams.get('realmId');
             
-            //const redirectUrl = state[1]+'\\?code='+ code + '&connectionType='+state[2] +'&companyId='+companyId;
+            const redirectUrl = state[1]+'?code='+ code + '&connectionType='+state[2] +'&companyId='+companyId;
 
-            //window.open(redirectUrl,"_self");
+            window.open(redirectUrl,"_self");
            
         </script>  
     </head>  
