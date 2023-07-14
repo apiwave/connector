@@ -8,7 +8,7 @@
             const state = urlParams.get('state').split(',');
             const companyId = urlParams.get('realmId');
             
-            const redirectUrl = state[1]+'\\?c__code='+ code + '&c__connection_type='+state[2] +'&c__companyId='+companyId;
+            const redirectUrl = state[1]+'\\?code='+ code + '&connection_type='+state[2] +'&companyId='+companyId;
 
             window.open(redirectUrl,"_self");
            
